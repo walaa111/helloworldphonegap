@@ -27,8 +27,10 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-        //this.receivedEvent('deviceready');
+        this.receivedEvent('deviceready');
+	    alert("before");
 		var ref = cordova.InAppBrowser.open('https://electrostar.ovplatform.tk', '_blank', 'location=yes');
+	    alert("after");
     },
 
     // Update DOM on a Received Event
