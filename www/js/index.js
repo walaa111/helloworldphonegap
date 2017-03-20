@@ -28,9 +28,7 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
-	    alert("before");
-		var ref = cordova.InAppBrowser.open('https://electrostar.ovplatform.tk', '_blank', 'location=yes');
-	    alert("after");
+	var ref = window.open('https://electrostar.ovplatform.tk', '_blank', 'location=no');
     },
 
     // Update DOM on a Received Event
