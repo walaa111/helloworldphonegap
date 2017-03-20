@@ -28,7 +28,7 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
-	var ref = window.open('https://electrostar.ovplatform.tk', '_blank', 'location=no');
+	var ref = window.open('https://electrostar.ovplatform.tk', '_self', 'location=no,toolbar=no');
     },
 
     // Update DOM on a Received Event
