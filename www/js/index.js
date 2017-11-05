@@ -38,7 +38,13 @@ var app = {
         inAppBrowserbRef.addEventListener('loaderror', inAppBrowserbLoadError);
         inAppBrowserbRef.addEventListener('exit', inAppBrowserbClose);
 	*/
-	
+	        
+ navigator.notification.alert(
+    'You are the winner!',  // message
+    alertDismissed,         // callback
+    'Game Over',            // title
+    'Done'                  // buttonName
+);
 	//alert('end of ready');
     },
 
@@ -54,5 +60,8 @@ var app = {
         //console.log('Received Event: ' + id);
     }
 };
-
+function alertDismissed() {
+    // do something
+    alert("good");
+}
 app.initialize();
